@@ -1,0 +1,11 @@
+%h1 Submit a Snippet
+
+= link_to "Generate", class: "generate-snippet-button"
+
+= simple_form_for(@snippet) do |f|
+  .form-label
+    = f.label :content
+  .form-text-label
+    = f.text_area :content
+  .form-submit
+    = f.submit

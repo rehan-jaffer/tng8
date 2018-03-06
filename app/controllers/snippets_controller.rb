@@ -2,8 +2,14 @@ class SnippetsController < ApplicationController
 
   def new
     @snippet = Snippet.new
+    render :new
   end
 
+  def show
+    @snippet = Snippet.find(params[:id])
+    render :show
+  end 
+ 
   def create
     @snippet = Snippet.new(snippet_params)
     if @snippet.save
@@ -15,6 +21,7 @@ class SnippetsController < ApplicationController
 
   def index
     @snippets = Snippet.all
+    render :index
   end
 
   private
