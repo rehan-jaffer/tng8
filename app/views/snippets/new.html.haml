@@ -1,7 +1,9 @@
 %h1 Submit a Snippet
 
-= link_to "Generate", class: "generate-snippet-button"
+= link_to "Generate", "#", class: "generate-snippet-button"
 
+%pre.generate-output
+  hi
 = simple_form_for(@snippet) do |f|
   .form-label
     = f.label :content
