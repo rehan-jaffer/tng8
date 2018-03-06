@@ -9,6 +9,7 @@ gem "simple_form"
 gem "twitter-bootstrap-rails"
 gem "rspec-rails"
 gem "dotenv", groups: [:development, :test]
+gem "haml-rails"
 
 group :test do
   gem "rspec-rails"
