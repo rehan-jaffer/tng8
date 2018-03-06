@@ -5,6 +5,13 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem "simple_form"
+gem "twitter-bootstrap-rails"
+gem "rspec-rails"
+
+group :test do
+  gem "rspec-rails"
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
